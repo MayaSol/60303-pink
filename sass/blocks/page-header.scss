@@ -1,0 +1,22 @@
+.page-header {
+  min-width: $screen-sm;
+  margin: 0 auto;
+  &__bg-img {
+    position: relative;
+    height: 458px;
+    background-color: #2b3b4b;
+    /**/
+    outline: 1px solid yellow;
+  }
+  &__img {
+    height: 392px;
+    width: $screen-sm;
+    margin: 0 auto;
+    /**/
+    outline: 1px solid white;
+    background: yellow;
+    opacity: 0.1;
+  }
+  /**/
+  outline:2px dotted yellow;
+}

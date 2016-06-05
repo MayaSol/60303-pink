@@ -1,0 +1,50 @@
+.reviews {
+  padding-top: 45px;
+  margin-bottom: 133px;
+  background-color: #ffffff;
+  &__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    @include container;
+    text-align: center;
+  }
+  &__item-author {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+  &__item-content {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: $color-main;
+  }
+}
+
+#reviews-btn-1:checked ~ .slider__controls label[for="reviews-btn-1"] {
+  @include slider-label-checked;
+}
+
+#reviews-btn-2:checked ~ .slider__controls label[for="reviews-btn-2"] {
+  @include slider-label-checked;
+}
+
+#reviews-btn-3:checked ~ .slider__controls label[for="reviews-btn-3"] {
+  @include slider-label-checked;
+}
+
+#reviews-btn-1:checked ~ .slider__inner .slider__item:nth-child(1) {
+  display: block;
+}
+
+#reviews-btn-2:checked ~ .slider__inner .slider__item:nth-child(2) {
+  display: block;
+}
+
+#reviews-btn-3:checked ~ .slider__inner .slider__item:nth-child(3) {
+  display: block;
+}

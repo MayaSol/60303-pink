@@ -1,0 +1,18 @@
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin slider-label-checked {
+  background-color: #ffffff;
+  border-color: $color-main;
+  opacity: 1;
+}

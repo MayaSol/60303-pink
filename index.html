@@ -4,58 +4,82 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="index-page">
 
   <header class="page-header">
 
-    <nav class="main-menu main-menu--opened">
+    <div class="page-header__bg-img">
 
-      <h1>
+      <nav class="main-menu main-menu--opened">
+
+        <div class="main-menu__top">
+
+          <h1 class="main-menu__logo">
         <a class="logo-plain"  href="#">
         PINK
         </a>
       </h1>
 
-      <button class="main-menu__btn">
-      </button>
+          <div class="main-menu__wrapper">
+            <button class="main-menu__btn">
+            </button>
+          </div>
 
-      <ul class="main-menu__items">
-        <li class="main-menu__item"><a>Главная</a></li>
-        <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
-      </ul>
+        </div>
 
-    </nav>
+        <ul class="main-menu__items">
+          <li class="main-menu__item"><a>Главная</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
+        </ul>
 
-    <nav class="main-menu main-menu--closed">
+      </nav>
 
-      <h1>
-        <a class="logo logo--plain" href="#">
-          PINK
+      <nav class="main-menu main-menu--closed">
+
+        <div class="main-menu__top">
+          <div class="main-menu__top-inner">
+
+            <h1 class="main-menu__logo">
+        <a class="logo-plain"  href="#">
+        PINK
         </a>
       </h1>
 
-      <button class="main-menu__btn">
-      </button>
+            <div class="main-menu__wrapper">
+              <button class="main-menu__btn">
+              </button>
+            </div>
 
-    </nav>
+          </div>
+        </div>
 
-    <div class="downloads">
+      </nav>
 
-      <a class="downloads__btn" href="#">Скачать приложение</a>
-
-      <ul class="downloads__icons">
-        <li class="downloads__icon downloads__icon--apple"><a href="#">Apple</a></li>
-        <li class="downloads__icon downloads__icon--android"><a href="#">Android</a></li>
-        <li class="downloads__icon downloads__icon--win"><a href="#">Windows</a></li>
-      </ul>
-
-      <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="page-header__img"></div>
 
     </div>
+
+    <div class="downloads">
+      <div class="downloads__inner">
+
+        <a class="downloads__btn" href="#">Скачать приложение</a>
+
+        <ul class="downloads__icons">
+          <li class="downloads__icon downloads__icon--apple"><a href="#">Apple</a></li>
+          <li class="downloads__icon downloads__icon--android"><a href="#">Android</a></li>
+          <li class="downloads__icon downloads__icon--win"><a href="#">Windows</a></li>
+        </ul>
+
+        <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+
 
   </header>
 
@@ -63,28 +87,33 @@
   <main>
 
     <section class="features">
+      <div class="features__inner">
 
-      <h2 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
 
-      <ul class="features__items">
+        <ul class="features__items">
 
-        <li class="features__item">
-          <h3 class="features__item-header">Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
 
-        <li class="features__item">
-          <h3 class="features__item-header">Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
 
-        <li class="features__item">
-          <h3 class="features__item-header">Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
 
-      </ul>
+        </ul>
 
+        <div class="features__img"></div>
+
+      </div>
     </section>
 
 
@@ -92,35 +121,35 @@
 
       <div class="slider">
 
-        <input type="radio" name="reviews-toggle" id="reviews-btn-1">
+        <input type="radio" name="reviews-toggle" id="reviews-btn-1" checked>
         <input type="radio" name="reviews-toggle" id="reviews-btn-2">
         <input type="radio" name="reviews-toggle" id="reviews-btn-3">
 
-        <ul class="slider__controls">
-          <li class="slider__controls-item"></li>
-          <li class="slider__controls-item"></li>
-          <li class="slider__controls-item"></li>
-        </ul>
+        <div class="slider__controls">
+          <label class="slider__controls-item" for="reviews-btn-1"></label>
+          <label class="slider__controls-item" for="reviews-btn-2"></label>
+          <label class="slider__controls-item" for="reviews-btn-3"></label>
+        </div>
 
         <div class="slider__inner">
 
           <ul class="reviews__items">
 
-            <li class="reviews__item">
+            <li class="reviews__item slider__item">
               <h3 class="reviews__item-author">Николай Петров</h3>
               <div class="reviews__item-content">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </div>
             </li>
 
-            <li class="reviews__item">
-              <h3 class="reviews__item-author"></h3>
-              <div class="reviews__item-content"></div>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__item-author">Слайд 2</h3>
+              <div class="reviews__item-content">Отзыв2</div>
             </li>
 
-            <li class="reviews__item">
-              <h3 class="reviews__item-author"></h3>
-              <div class="reviews__item-content"></div>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__item-author">Слайд 3</h3>
+              <div class="reviews__item-content">Отзыв 3</div>
             </li>
 
           </ul>
@@ -136,15 +165,15 @@
 
       <div class="slider">
 
-        <input type="radio" name="price-toggle" id="price-btn-1">
+        <input type="radio" name="price-toggle" id="price-btn-1" checked>
         <input type="radio" name="price-toggle" id="price-btn-2">
         <input type="radio" name="price-toggle" id="price-btn-3">
 
-        <ul class="slider__controls">
-          <li class="slider__controls-item"></li>
-          <li class="slider__controls-item"></li>
-          <li class="slider__controls-item"></li>
-        </ul>
+        <div class="slider__controls">
+          <label class="slider__controls-item" for="price-btn-1"></label>
+          <label class="slider__controls-item" for="price-btn-2"></label>
+          <label class="slider__controls-item" for="price-btn-3"></label>
+        </div>
 
         <div class="slider__inner">
 
