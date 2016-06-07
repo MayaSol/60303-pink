@@ -5,81 +5,71 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="index-page">
+<body class="page">
 
   <header class="page-header">
 
-    <div class="page-header__bg-img">
+    <nav class="main-menu main-menu--closed">
 
-      <nav class="main-menu main-menu--opened">
-
-        <div class="main-menu__top">
+      <div class="main-menu__top">
+        <div class="main-menu__top-inner">
 
           <h1 class="main-menu__logo">
-        <a class="logo-plain"  href="#">
-        PINK
-        </a>
-      </h1>
+            <a class="logo-plain"  href="#">
+              PINK
+            </a>
+          </h1>
 
-          <div class="main-menu__wrapper">
+          <div class="main-menu__btn-wrapper">
             <button class="main-menu__btn">
             </button>
           </div>
 
         </div>
+      </div>
 
-        <ul class="main-menu__items">
-          <li class="main-menu__item"><a>Главная</a></li>
-          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
-        </ul>
+      <ul class="main-menu__items">
+        <li class="main-menu__item">
+          <a>Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru/">Htmlacademy</a>
+        </li>
+      </ul>
 
-      </nav>
+    </nav>
 
-      <nav class="main-menu main-menu--closed">
-
-        <div class="main-menu__top">
-          <div class="main-menu__top-inner">
-
-            <h1 class="main-menu__logo">
-        <a class="logo-plain"  href="#">
-        PINK
-        </a>
-      </h1>
-
-            <div class="main-menu__wrapper">
-              <button class="main-menu__btn">
-              </button>
-            </div>
-
-          </div>
-        </div>
-
-      </nav>
-
-      <div class="page-header__img"></div>
-
-    </div>
+    <div class="page-header__img"></div>
 
     <div class="downloads">
       <div class="downloads__inner">
 
-        <a class="downloads__btn" href="#">Скачать приложение</a>
+        <a class="downloads__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
 
         <ul class="downloads__icons">
-          <li class="downloads__icon downloads__icon--apple"><a href="#">Apple</a></li>
-          <li class="downloads__icon downloads__icon--android"><a href="#">Android</a></li>
-          <li class="downloads__icon downloads__icon--win"><a href="#">Windows</a></li>
+          <li class="downloads__icon downloads__icon--apple">
+            <a href="http://www.apple.com/ru/itunes/">Apple</a>
+          </li>
+          <li class="downloads__icon downloads__icon--android">
+            <a href="https://play.google.com/store?hl=ru">Android</a>
+          </li>
+          <li class="downloads__icon downloads__icon--win">
+            <a href="https://www.microsoft.com/en-us/store/apps/windows-phone">Windows</a>
+          </li>
         </ul>
 
         <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
       </div>
     </div>
-
 
   </header>
 
@@ -89,8 +79,10 @@
     <section class="features">
       <div class="features__inner">
 
-        <h2 class="features__title">Устали от серости мегаполиса?</h2>
-        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+        <h2 class="features__title">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </h2>
 
         <ul class="features__items">
 
@@ -121,9 +113,9 @@
 
       <div class="slider">
 
-        <input type="radio" name="reviews-toggle" id="reviews-btn-1" checked>
-        <input type="radio" name="reviews-toggle" id="reviews-btn-2">
-        <input type="radio" name="reviews-toggle" id="reviews-btn-3">
+        <input type="radio" class="reviews-btn-1" name="reviews-toggle" id="reviews-btn-1" checked>
+        <input type="radio" class="reviews-btn-2" name="reviews-toggle" id="reviews-btn-2">
+        <input type="radio" class="reviews-btn-3" name="reviews-toggle" id="reviews-btn-3">
 
         <div class="slider__controls">
           <label class="slider__controls-item" for="reviews-btn-1"></label>
@@ -165,9 +157,9 @@
 
       <div class="slider">
 
-        <input type="radio" name="price-toggle" id="price-btn-1" checked>
-        <input type="radio" name="price-toggle" id="price-btn-2">
-        <input type="radio" name="price-toggle" id="price-btn-3">
+        <input type="radio" class="price-btn-1" name="price-toggle" id="price-btn-1" checked>
+        <input type="radio" class="price-btn-2" name="price-toggle" id="price-btn-2">
+        <input type="radio" class="price-btn-3" name="price-toggle" id="price-btn-3">
 
         <div class="slider__controls">
           <label class="slider__controls-item" for="price-btn-1"></label>

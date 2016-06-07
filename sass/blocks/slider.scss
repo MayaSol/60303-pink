@@ -4,42 +4,48 @@
   input[type="radio"] {
     display: none;
   }
-  &__controls {
-    list-style: none;
-    padding: 0;
-    line-height: 12px;
-    font-size: 0;
+}
+
+.slider__controls {
+  list-style: none;
+  padding: 0;
+  line-height: 12px;
+  font-size: 0;
+}
+
+.slider__controls-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+  background-color: $color-main;
+  opacity: 0.3;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  
+  &:last-child {
+    margin-right: 0;
   }
-  &__controls-item {
-    display: inline-block;
-    vertical-align: middle;
-    width: 6px;
-    height: 6px;
-    margin-right: 13px;
-    background-color: $color-main;
-    opacity: 0.3;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  &__inner {
-    @include container;
-  }
-  &__controls {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 62px;
-    height: 12px;
-    /**/
-    outline: 1px solid red;
-  }
-  &__item {
-    display: none;
-    min-height: 240px;
-  }
+}
+
+.slider__inner {
+  @include container;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 62px;
+  height: 12px;
+  /**/
+  outline: 1px solid red;
+}
+
+.slider__item {
+  display: none;
+  min-height: 240px;
 }

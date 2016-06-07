@@ -4,46 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
 
-    <nav class="main-menu main-menu--opened">
+    <nav class="main-menu main-menu--closed">
 
-      <h1>
-        <a class="logo-plain"  href="index.html">
-        PINK
-        </a>
-      </h1>
+      <div class="main-menu__top">
+        <div class="main-menu__top-inner">
 
-      <button class="main-menu__btn">
-      </button>
+          <h1 class="main-menu__logo">
+            <a class="logo-plain"  href="#">
+              PINK
+            </a>
+          </h1>
+
+          <div class="main-menu__btn-wrapper">
+            <button class="main-menu__btn">
+            </button>
+          </div>
+
+        </div>
+      </div>
 
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a href="index.html">Главная</a></li>
-        <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a>Конкурс</a></li>
-        <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
+        <li class="main-menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a>Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru/">Htmlacademy</a>
+        </li>
       </ul>
 
     </nav>
 
-    <nav class="main-menu main-menu--closed">
+    <div class="page-header__title-wrapper">
+      <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
 
-      <h1>
-        <a class="logo logo--plain" href="index.html">
-          PINK
-        </a>
-      </h1>
+    <div class="downloads">
+      <div class="downloads__inner">
 
-      <button class="main-menu__btn">
-      </button>
+        <a class="downloads__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
 
-    </nav>
+        <ul class="downloads__icons">
+          <li class="downloads__icon downloads__icon--apple">
+            <a href="http://www.apple.com/ru/itunes/">Apple</a>
+          </li>
+          <li class="downloads__icon downloads__icon--android">
+            <a href="https://play.google.com/store?hl=ru">Android</a>
+          </li>
+          <li class="downloads__icon downloads__icon--win">
+            <a href="https://www.microsoft.com/en-us/store/apps/windows-phone">Windows</a>
+          </li>
+        </ul>
 
-    <h2 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+      </div>
+    </div>
 
   </header>
 

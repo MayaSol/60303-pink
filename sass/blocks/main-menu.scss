@@ -1,40 +1,48 @@
 .main-menu {
-  &--opened {
-    display: none;
+  
+  &--closed {
+    .main-menu__items {
+      display: none;
+    }
   }
-  &__top {
-    height: 66px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /**/
-    outline: 1px dashed red;
-  }
-  &__top-inner {
-    @include container;
-    @include clearfix;
-  }
-  &__logo {
-    float: left;
-    width: 100px;
-    margin: 0;
-    line-height: 66px;
-    font-size: 0;
-    text-align: left;
-    /**/
-    outline: 1px solid blue;
-  }
-  &__wrapper {
-    float: right;
-    width: 100px;
-    line-height: 66px;
-    font-size: 0;
-    text-align: right;
-    /**/
-    outline: 1px solid green;
-  }
-  &__btn {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-    height: 24px;
-  }
+}
+
+.main-menu__top {
+  height: 66px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /**/
+  outline: 1px dashed red;
+}
+
+.main-menu__top-inner {
+  @include container;
+  @include clearfix;
+}
+
+.main-menu__logo {
+  float: left;
+  width: 100px;
+  margin: 0;
+  line-height: 66px;
+  font-size: 0;
+  text-align: left;
+  /**/
+  outline: 1px solid blue;
+}
+
+.main-menu__btn-wrapper {
+  float: right;
+  width: 100px;
+  line-height: 66px;
+  font-size: 0;
+  text-align: right;
+  /**/
+  outline: 1px solid green;
+}
+
+.main-menu__btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 24px;
 }

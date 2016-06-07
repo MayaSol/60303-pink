@@ -10,18 +10,6 @@
     color: #ffffff;
     background-color: $color-main;
   }
-  &__tariff-name {
-    font-size: 1.8rem;
-    line-height: 3.0rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  &__tariff-value {
-    font-size: 2.4rem;
-    line-height: 3.0rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
   td {
     width: 254px;
     padding-left: 22px;
@@ -31,25 +19,40 @@
     color: $color-main;
     text-transform: uppercase;
   }
-  &__option {
-    font-size: 0;
-  }
 }
 
-#price-btn-1:checked ~ .slider__controls label[for="price-btn-1"] {
+.price-table__tariff-name {
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-table__tariff-value {
+  font-size: 2.4rem;
+  line-height: 3.0rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.price-table__option {
+  font-size: 0;
+}
+
+.price-btn-1:checked ~ .slider__controls label[for="price-btn-1"] {
   @include slider-label-checked;
 }
 
-#price-btn-2:checked ~ .slider__controls label[for="price-btn-2"] {
+.price-btn-2:checked ~ .slider__controls label[for="price-btn-2"] {
   @include slider-label-checked;
 }
 
-#price-btn-3:checked ~ .slider__controls label[for="price-btn-3"] {
+.price-btn-3:checked ~ .slider__controls label[for="price-btn-3"] {
   @include slider-label-checked;
 }
 
-#price-btn-1:checked ~ .slider__inner .slider__item:nth-child(1) {}
+.price-btn-1:checked ~ .slider__inner .slider__item:nth-child(1) {}
 
-#price-btn-2:checked ~ .slider__inner .slider__item:nth-child(2) {}
+.price-btn-2:checked ~ .slider__inner .slider__item:nth-child(2) {}
 
-#price-btn-3:checked ~ .slider__inner .slider__item:nth-child(3) {}
+.price-btn-3:checked ~ .slider__inner .slider__item:nth-child(3) {}
