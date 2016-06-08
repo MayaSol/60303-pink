@@ -1,0 +1,21 @@
+.page-footer {
+  padding-top: 40px;
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+}
+
+.page-footer__socials {
+  margin-bottom: 39px;
+}
+
+.page-footer__credentials {
+  @include container;
+  text-align: center;
+  span,
+  .page-footer__credentials-logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

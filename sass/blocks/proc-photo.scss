@@ -1,0 +1,65 @@
+.proc-photo__opts {
+  min-height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 0;
+}
+
+.proc-photo__opt {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 40px;
+  
+  &--size {
+    width: 44px;
+    height: 44px;
+    margin-right: 34px;
+  }
+  
+  &--color {
+    width: 48px;
+    height: 43px;
+    margin-right: 40px;
+  }
+  
+  &--bright {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.proc-photo__range {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.proc-photo__btns {
+  padding-top: 38px;
+  border-top: 1px solid #dddfe0;
+}
+
+.proc-photo__btn {
+  display: block;
+  @include container;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 27px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: $color-highlight;
+  
+  &--post {
+    margin-bottom: 12px;
+    border-color: $color-highlight;
+  }
+  
+  &--cancel {
+    margin-bottom: 0;
+    border-color: $color-main;
+    opacity: 0.1;
+  }
+}
