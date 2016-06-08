@@ -10,11 +10,11 @@ html {
   color:$color-main;
 }
 
-.btn-like{
-  width: 13px;
-  height: 12px;
-  font-size: 0;
-  outline: none;
-  border: none;
-  background-color: red;
+.page__slogan{
+  @include container;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.0rem;
+  color: $color-main;
 }

@@ -5,6 +5,7 @@
 }
 
 @mixin clearfix {
+  
   &::after {
     content: "";
     display: table;
@@ -16,4 +17,19 @@
   background-color: #ffffff;
   border-color: $color-main;
   opacity: 1;
+}
+
+@mixin btn-form {
+  min-height: 63px;
+  line-height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.0rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  background-color: $color-green;
 }

@@ -3,16 +3,3 @@
   padding-bottom: 50px;
 }
 
-.user-photos__post {
-  @include container;
-  padding-bottom: 26px;
-  margin-bottom: 20px;
-  background-color: $color-grey-light;
-  
-  &--best{
-    width: $screen-sm;
-    .user-post__info{
-      @include container;
-    }
-  }
-}

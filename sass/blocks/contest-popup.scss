@@ -1,0 +1,48 @@
+.contest-popup {
+  display: none;
+  position: fixed;
+  width: $screen-sm;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-left: -$screen-sm/2;
+  margin-top: -190px;
+  padding-top: 42px;
+  padding-bottom: 52px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.15);
+  
+  &--visible {
+    display: block;
+  }
+}
+
+.contest-popup__title {
+  @include container;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contest-popup__text {
+  @include container;
+  margin-bottom: 35px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: $color-main;
+}
+
+.contest-popup__footer {
+  padding-top: 48px;
+  background-color: $color-grey-light;
+}
+
+.contest-popup__btn {
+  @include btn-form;
+  @include container;
+}

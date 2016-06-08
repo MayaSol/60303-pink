@@ -1,0 +1,61 @@
+.app-contest {
+  padding-top: 35px;
+  padding-bottom: 42px;
+  background-color:$color-grey-light;
+}
+
+.app-contest__inner {
+  @include container;
+}
+
+.app-contest__list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.app-contest__title {
+  display: block;
+  margin-top:0;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 3.0rem;
+  font-weight: 400;
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+.app-contest__item {
+  margin-bottom: 36px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.app-contest__input {
+  display: none;
+}
+
+.app-contest__lbl {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 400;
+  color: $color-main;
+  
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 32px;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 2px solid $color-grey;
+    border-radius: 50%;
+  }
+}

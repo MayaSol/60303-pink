@@ -1,0 +1,18 @@
+.contest__slogan {
+  padding-top: 50px;
+}
+
+.contest__btn {
+  display: block;
+  margin-bottom: 42px;
+  @include container;
+  @include btn-form;
+}
+
+.contest__notes {
+  @include container;
+  text-align: center;
+  span {
+    color: $color-highlight;    
+  }
+}
