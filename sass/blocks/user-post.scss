@@ -1,90 +1,111 @@
 
+
 .user-post {
-  padding-bottom: 26px;
-  margin-bottom: 20px;
-  background-color: $color-grey-light;
-  
-  &--best {
-    width: $screen-sm;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &--regular {
-    @include container;
-  }
+    margin-bottom: 20px;
+    padding-bottom: 26px;
+
+    background-color: $color-grey-light;
+
+    &--best {
+        width: $screen-sm;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &--regular {
+        @include container;
+    }
 }
 
-.user-post__info{
+.user-post__info {
     @include container;
 }
 
 .user-post__photo {
-  width: 100%;
-  height: 132px;
-  margin-bottom: 22px;
-  background-image: url("http://placehold.it/320x132");
-  background-position: bottom center;
+    width: 100%;
+    height: 132px;
+    margin-bottom: 22px;
+
+    background-image: url('http://placehold.it/320x132');
+    background-position: bottom center;
 }
 
 .user-post__header {
-  line-height: 2.4rem;
-  /**/
-  outline: 1px solid red;
+    line-height: 2.4rem;
+    /**/
+
+    outline: 1px solid red;
 }
 
 .user-post__author {
-  display: inline-block;
-  vertical-align: bottom;
-  margin: 0;
-  font-size: 1.4rem;
-  color: $color-main;
-  font-weight: 700;
-  /**/
-  outline: 1px solid blue;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    display: inline-block;
+
+    margin: 0;
+
+    vertical-align: bottom;
+
+    color: $color-main;
+    /**/
+    outline: 1px solid blue;
 }
 
 .user-post__time {
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 1.2rem;
-  color: $color-main;
-  font-weight: 300;
-  /**/
-  outline: 1px solid orange;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    display: inline-block;
+
+    vertical-align: bottom;
+
+    color: $color-main;
+    /**/
+    outline: 1px solid orange;
 }
 
 .user-post__text {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: $color-main;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    color: $color-main;
 }
 
 .user-post__vote {
-  font-size: 0;
-  line-height: 2.4rem;
+    font-size: 0;
+    line-height: 2.4rem;
 }
 
-.user-post__vote-like {
-  display: inline-block;
-  vertical-align: middle;
-  width: 13px;
-  height: 12px;
-  margin-right: 19px;
-  font-size: 0;
-  outline: none;
-  border: none;
-  background-color: red;
+.user-post__vote-btn {
+    font-size: 0;
+
+    display: inline-block;
+
+    width: 13px;
+    height: 12px;
+    margin-right: 19px;
+
+    vertical-align: middle;
+
+    border: none;
+    outline: none;
+    background-color: red;
 }
 
-.user-post__count-like {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.2rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: $color-highlight;
-  text-transform: uppercase;
+.user-post__count-btn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    display: inline-block;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: $color-highlight;
 }

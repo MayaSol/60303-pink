@@ -1,90 +1,119 @@
 .main-menu {
-  
-  &--opened {
-    .main-menu__items {
-      display: block;
+
+    &--opened {
+
+        .main-menu__items {
+            display: block;
+        }
+
+        .main-menu__top {
+            position: relative;
+
+            height: 69px;
+            margin-bottom: 30px;
+
+            background-color: $color-main;
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 1);
+        }
     }
-    .main-menu__top {
-      position: relative;
-      height: 69px;
-      margin-bottom: 30px;
-      background-color: $color-main;
-      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
-    }
-  }
-  
 }
 
 .main-menu__items {
-  display: none;
-  position: absolute;
-  top: 70px;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: $font-family;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 3.2rem;
-  color: #ffffff;
-  background-color: $color-main;
-  text-transform: uppercase;
-  list-style: none;
-  a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  z-index: 100;
+    font-family: $font-family;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+
+    display: none;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: $color-main;
+
+    a {
+        text-decoration: none;
+
+        color: #fff;
+    }
 }
 
 .main-menu__item {
-  margin-bottom: 1px;
-  text-align: center;
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 1px 0px 0px rgba(0, 0, 0, 1);
-  a {
-    @include container;
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    min-height: 63px;
-    line-height: 63px;
-  }
+    margin-bottom: 1px;
+
+    text-align: center;
+
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(0, 0, 0, 1);
+
+    a {
+        line-height: 63px;
+
+        display: inline-block;
+
+        width: 100%;
+        min-height: 63px;
+
+        vertical-align: middle;
+
+        @include container;
+    }
 }
 
 .main-menu__top {
-  height: 66px;
-  background-color: rgba(0, 0, 0, 0.3);
+    height: 66px;
+
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu__top-inner {
-  @include container;
-  @include clearfix;
+    @include container;
+    @include clearfix;
 }
 
 .main-menu__logo {
-  float: left;
-  width: 100px;
-  margin: 0;
-  line-height: 66px;
-  font-size: 0;
-  text-align: left;
-  /**/
-  outline: 1px solid blue;
+    font-size: 0;
+    line-height: 66px;
+
+    float: left;
+
+    width: 100px;
+    margin: 0;
+
+    text-align: left;
+    /**/
+
+    outline: 1px solid blue;
 }
 
 .main-menu__btn-wrapper {
-  float: right;
-  width: 100px;
-  line-height: 66px;
-  font-size: 0;
-  text-align: right;
-  /**/
-  outline: 1px solid green;
+    font-size: 0;
+    line-height: 66px;
+
+    float: right;
+
+    width: 100px;
+
+    text-align: right;
+    /**/
+
+    outline: 1px solid green;
 }
 
 .main-menu__btn {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50px;
-  height: 24px;
+    display: inline-block;
+
+    width: 50px;
+    height: 24px;
+
+    vertical-align: middle;
 }
