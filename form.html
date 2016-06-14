@@ -4,46 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
 
-    <nav class="main-menu main-menu--opened">
+    <nav class="main-menu main-menu--closed">
 
-      <h1>
-        <a class="logo-plain"  href="index.html">
-        PINK
-        </a>
-      </h1>
+      <div class="main-menu__top">
+        <div class="main-menu__top-inner">
 
-      <button class="main-menu__btn">
-      </button>
+          <h1 class="main-menu__logo">
+            <a class="logo-plain"  href="#">
+              PINK
+            </a>
+          </h1>
+
+          <div class="main-menu__btn-wrapper">
+            <button class="main-menu__btn">
+            </button>
+          </div>
+
+        </div>
+      </div>
 
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a href="index.html">Главная</a></li>
-        <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a>Конкурс</a></li>
-        <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
+        <li class="main-menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a>Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru/">Htmlacademy</a>
+        </li>
       </ul>
 
     </nav>
 
-    <nav class="main-menu main-menu--closed">
-
-      <h1>
-        <a class="logo logo--plain" href="index.html">
-          PINK
-        </a>
-      </h1>
-
-      <button class="main-menu__btn">
-      </button>
-
-    </nav>
-
-    <h2 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <div class="page-header__title-wrapper">
+      <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
 
   </header>
 
@@ -52,70 +58,74 @@
 
     <form class="contest">
 
-      <div class="contest__slogan page-slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </div>
+      <div class="page__slogan contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </div>
 
 
-      <fieldset class="contest__userinfo userinfo-contest">
+      <div class="contest__userinfo userinfo-contest">
 
         <ul class="userinfo-contest__list">
 
           <li class="userinfo-contest__item">
-            <label class="userinfo-contest__lbl" for="user-sec-name">Фамилия</label>
+            <label class="userinfo-contest__lbl" for="user-sec-name">Фамилия:</label>
             <input class="userinfo-contest__input" type="text" name="user-sec-name" id="user-sec-name" placeholder="Укажите фамилию">
           </li>
 
           <li class="userinfo-contest__item">
-            <label class="userinfo-contest__lbl" for="user-name">Имя</label>
+            <label class="userinfo-contest__lbl" for="user-name">Имя:</label>
             <input class="userinfo-contest__input" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя">
           </li>
 
           <li class="userinfo-contest__item">
-            <label class="userinfo-contest__lbl" for="user-patronymic">Отчество</label>
+            <label class="userinfo-contest__lbl" for="user-patronymic">Отчество:</label>
             <input class="userinfo-contest__input" type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
           </li>
 
         </ul>
 
-      </fieldset>
+      </div>
 
 
-      <fieldset class="contest__achieve achieve-contest">
+      <div class="contest__achieve achieve-contest">
+        <div class="achieve-contest__inner">
 
-        <legend class="achieve-contest__title">Ваши безбашенные достижения в путешествии</legend>
+          <h3 class="achieve-contest__title">
+            Ваши безбашенные<br> достижения в путешествии
+          </h3>
 
-        <ul class="achieve-contest__list">
+          <ul class="achieve-contest__list">
 
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="shark" id="shark">
-            <label class="achieve-contest__lbl" for="shark">Сделал селфи с акулой</label>
-          </li>
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="sun-burn" id="sun-burn">
-            <label class="achieve-contest__lbl" for="sun-burn">Обгорел на пляже</label>
-          </li>
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="chuck" id="chuck">
-            <label class="achieve-contest__lbl" for="chuck">Видел Чака Норриса</label>
-          </li>
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="souvenir" id="souvenir">
-            <label class="achieve-contest__lbl" for="souvenir">Накупил сувениров</label>
-          </li>
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="tower" id="tower">
-            <label class="achieve-contest__lbl" for="tower">Удержал башню</label>
-          </li>
-          <li class="achieve-contest__item">
-            <input class="achieve-contest__input" type="checkbox" name="hotel" id="hotel">
-            <label class="achieve-contest__lbl" for="hotel">Разгромил отель</label>
-          </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="shark" id="shark">
+              <label class="achieve-contest__lbl" for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="sun-burn" id="sun-burn">
+              <label class="achieve-contest__lbl" for="sun-burn">Обгорел на пляже</label>
+            </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="chuck" id="chuck">
+              <label class="achieve-contest__lbl" for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="souvenir" id="souvenir">
+              <label class="achieve-contest__lbl" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="tower" id="tower">
+              <label class="achieve-contest__lbl" for="tower">Удержал башню</label>
+            </li>
+            <li class="achieve-contest__item">
+              <input class="achieve-contest__input" type="checkbox" name="hotel" id="hotel">
+              <label class="achieve-contest__lbl" for="hotel">Разгромил отель</label>
+            </li>
 
-        </ul>
+          </ul>
 
-      </fieldset>
+        </div>
+      </div>
 
 
-      <fieldset class="contest__userinfo userinfo-contest">
+      <div class="contest__userinfo userinfo-contest">
 
         <ul class="userinfo-contest__list">
 
@@ -131,97 +141,105 @@
 
         </ul>
 
-      </fieldset>
+      </div>
 
 
-      <fieldset class="contest__app app-contest">
+      <div class="contest__app app-contest">
+        <div class="app-contest__inner">
 
-        <legend class="app-contest__title">С каким приложением путешествовали?
-        </legend>
+          <h3 class="app-contest__title">С каким приложением путешествовали?
+        </h3>
 
-        <ul class="app-contest__list">
+          <ul class="app-contest__list">
 
-          <li class="app-contest__item">
-            <input class="app-contest__input" type="radio" name="app" id="ios" value="ios">
-            <label class="app-contest__lbl" for="ios">Pink для iOS</label>
-          </li>
+            <li class="app-contest__item">
+              <input class="app-contest__input" type="radio" name="app" id="ios" value="ios">
+              <label class="app-contest__lbl" for="ios">Pink для iOS</label>
+            </li>
 
-          <li class="app-contest__item">
-            <input class="app-contest__input" type="radio" name="app" id="android" value="android">
-            <label class="app-contest__lbl" for="android">Pink на Android</label>
-          </li>
+            <li class="app-contest__item">
+              <input class="app-contest__input" type="radio" name="app" id="android" value="android">
+              <label class="app-contest__lbl" for="android">Pink на Android</label>
+            </li>
 
-          <li class="app-contest__item">
-            <input class="app-contest__input" type="radio" name="app" id="win" value="win">
-            <label class="app-contest__lbl" for="win">Windows Phone</label>
-          </li>
+            <li class="app-contest__item">
+              <input class="app-contest__input" type="radio" name="app" id="win" value="win">
+              <label class="app-contest__lbl" for="win">Windows Phone</label>
+            </li>
 
-        </ul>
+          </ul>
 
-      </fieldset>
+        </div>
+      </div>
 
 
-      <fieldset class="contest__usertext usertext-contest">
+      <div class="contest__usertext usertext-contest">
 
         <label class="usertext-contest__lbl" for="user-text">Опишите свои эмоции</label>
         <textarea class="usertext-contest__text" name="user-text" id="user-text" rows="5" cols="24">Можно прям в красках, не стесняясь в выражениях
         </textarea>
 
-      </fieldset>
+      </div>
 
       <button class="contest__btn" name="contest-submit">Отправить форму</button>
 
-      <div class="contest__notes"><span class="contest__highlite-text">*</span>— обязательные поля</div>
+      <div class="contest__notes"><span class="contest__highlite-text">*</span> — обязательные поля</div>
 
     </form>
 
 
-    <div class="contest-popup contest-popup--success">
+    <div class="contest-popup">
 
-      <h3 class="contest-popup__title">Что-то пошло не так!</h3>
+        <h3 class="contest-popup__title">Ваша заявка отправлена</h3>
 
-      <div class="contest-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+        <div class="contest-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
 
-      <button class="contest-popup__btn">OK</button>
-
-    </div>
-
-
-    <div class="contest-popup contest-popup--failure">
-
-      <h3 class="contest-popup__title">Ваша заявка отправлена</h3>
-
-      <div class="contest-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
-
-      <button class="contest-popup__btn">Закрыть окно</button>
+        <div class="contest-popup__footer">
+          <button class="contest-popup__btn">Закрыть окно</button>
+        </div>
 
     </div>
+
+
+    <div class="contest-popup">
+
+        <h3 class="contest-popup__title">Что-то пошло не так!</h3>
+
+        <div class="contest-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+
+        <button class="contest-popup__btn">OK</button>
+
+      </div>
 
   </main>
 
 
   <footer class="page-footer">
 
-    <a class="logo-pict" href="index.html">PINK</a>
+    <a class="page-footer__logo logo-pict" href="index.html">PINK</a>
 
-    <ul class="socials">
+    <ul class="page-footer__socials socials">
       <li class="socials__item socials__item--twitter">
-        <a href=""></a>
+        <a href="https://twitter.com/"><span>Twitter</span></a>
       </li>
       <li class="socials__item socials__item--youtube">
-        <a href=""></a>
+        <a href="https://www.youtube.com"><span>Youtube</span></a>
       </li>
       <li class="socials__item socials__item--facebook">
-        <a href=""></a>
+        <a href="http://www.facebook.com/"><span>Facebook</span></a>
       </li>
     </ul>
 
-    <div class="credentials">
-      Разработано
-      <a class="credentials__logo" href=""><img src="http://placehold.it/27x34" alt="htmlacademy"> </a>
+    <div class="page-footer__credentials">
+      <span class="page-footer__credentials-text">Разработано</span>
+      <a class="page-footer__credentials-logo" href="https://htmlacademy.ru/">
+        <img src="http://placehold.it/27x34" width="27" height="34" alt="Htmlacademy">
+      </a>
     </div>
 
   </footer>
+
+  <script src="js/main-menu.js"></script>
 
 </body>
 

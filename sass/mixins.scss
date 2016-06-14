@@ -1,0 +1,38 @@
+@mixin container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin clearfix {
+
+  &::after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+}
+
+@mixin slider-label-checked {
+  opacity: 1;
+  border-color: $color-main;
+  background-color: #fff;
+}
+
+@mixin btn-form {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 63px;
+
+  min-height: 63px;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background-color: $color-green;
+}

@@ -1,0 +1,70 @@
+.achieve-contest {
+  padding-top: 35px;
+  padding-bottom: 49px;
+
+  background-color: $color-grey-light;
+}
+
+.achieve-contest__inner {
+  @include container;
+}
+
+.achieve-contest__title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.0rem;
+
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-highlight;
+}
+
+.achieve-contest__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.achieve-contest__item {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.achieve-contest__input {
+  display: none;
+}
+
+.achieve-contest__lbl {
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  color: $color-main;
+
+  &:before {
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+
+    content: '';
+    vertical-align: middle;
+
+    border: 2px solid $color-grey;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,10 @@
+.logo-pict {
+  font-size: 0;
+
+  display: block;
+
+  width: 147px;
+  height: 40px;
+
+  @include container;
+}

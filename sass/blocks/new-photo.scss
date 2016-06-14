@@ -1,0 +1,21 @@
+.new-photo {
+  padding-top: 20px;
+  padding-bottom: 41px;
+
+  background-color: $color-grey-light;
+}
+
+.new-photo__slogan {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.new-photo__img {
+  margin-bottom: 42px;
+
+  @include container;
+}
+
+.new-photo__proc {
+  @include container;
+}

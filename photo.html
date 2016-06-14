@@ -4,46 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
 
-    <nav class="main-menu main-menu--opened">
+    <nav class="main-menu">
 
-      <h1>
-        <a class="logo-plain" href="index.html">
-        PINK
-        </a>
-      </h1>
+      <div class="main-menu__top">
+        <div class="main-menu__top-inner">
 
-      <button class="main-menu__btn">
-      </button>
+          <h1 class="main-menu__logo">
+            <a class="logo-plain"  href="#">
+              PINK
+            </a>
+          </h1>
+
+          <div class="main-menu__btn-wrapper">
+            <button class="main-menu__btn">
+            </button>
+          </div>
+
+        </div>
+      </div>
 
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a href="index.html">Главная</a></li>
-        <li class="main-menu__item"><a>Фотографии</a></li>
-        <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-menu__item"><a href="#">Htmlacademy</a></li>
+        <li class="main-menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a>Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru/">Htmlacademy</a>
+        </li>
       </ul>
 
     </nav>
 
-    <nav class="main-menu main-menu--closed">
-
-      <h1>
-        <a class="logo logo--plain" href="index.html">
-          PINK
-        </a>
-      </h1>
-
-      <button class="main-menu__btn">
-      </button>
-
-    </nav>
-
-    <h2 class="page-title">Фотографии пользователей</h2>
+    <div class="page-header__title-wrapper">
+      <h2 class="page-header__title">Фотографии пользователей</h2>
+    </div>
 
   </header>
 
@@ -52,202 +58,232 @@
 
     <section class="user-photos">
 
-      <h3 class="user-photos__slogan page-slogan">
-    Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
-   </h3>
+      <h3 class="page__slogan user-photos__slogan">
+        Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
+      </h3>
 
+      <article class="user-photos__post user-post user-post--best">
 
-      <article class="user-photos__post user-post">
+        <img class="user-post__photo" src="http://placehold.it/320x132" width="320" height="132" alt="Фотография пользователя">
 
-        <img class="user-post__photo user-post__photo--best" src="http://placehold.it/320x132" alt="Фотография пользователя">
+        <div class="user-post__info">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Анна</h4>
-          <time class="user-post__time" datetime="2016-05-30">(5 минут назад)</time>
-        </header>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Анна</h4>
+            <time class="user-post__time" datetime="2016-05-30">(5 минут назад)</time>
+          </header>
 
-        <div class="user-post__text">
-          <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-        </div>
-
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:334</span>
+          <div class="user-post__text">
+            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 334</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
 
-      <article class="user-photos__post user-post">
+      <article class="user-photos__post user-post user-post--regular">
 
-        <img class="user-post__photo" src="http://placehold.it/280x132" alt="Фотография пользователя">
+        <img class="user-post__photo" src="http://placehold.it/280x132" width="280" height="132" alt="Фотография пользователя">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Левон</h4>
-          <time class="user-post__time" datetime="2016-05-30">(5 часов назад)</time>
-        </header>
+        <div class="user-post__info">
 
-        <div class="user-post__text">
-          <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        </div>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Левон</h4>
+            <time class="user-post__time" datetime="2016-05-30">(5 часов назад)</time>
+          </header>
 
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:356</span>
+          <div class="user-post__text">
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 356</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
 
-      <article class="user-photos__post user-post">
+      <article class="user-photos__post user-post user-post--regular">
 
-        <img class="user-post__photo" src="http://placehold.it/280x132" alt="Фотография пользователя">
+        <img class="user-post__photo" src="http://placehold.it/280x132" width="280" height="132" alt="Фотография пользователя">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Антон</h4>
-          <time class="user-post__time" datetime="2016-05-30">(12 часов назад)</time>
-        </header>
+        <div class="user-post__info">
 
-        <div class="user-post__text">
-          <p>Соседи будут рады!</p>
-        </div>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Антон</h4>
+            <time class="user-post__time" datetime="2016-05-30">(12 часов назад)</time>
+          </header>
 
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:666</span>
+          <div class="user-post__text">
+            <p>Соседи будут рады!</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 666</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
 
-      <article class="user-photos__post user-post">
+      <article class="user-photos__post user-post user-post--regular">
 
-        <img class="user-post__photo" src="http://placehold.it/280x132" alt="Фотография пользователя">
+        <img class="user-post__photo" src="http://placehold.it/280x132" width="280" height="132" alt="Фотография пользователя">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Борис</h4>
-          <time class="user-post__time" datetime="2016-05-30">(20 часов назад)</time>
-        </header>
+        <div class="user-post__info">
 
-        <div class="user-post__text">
-          <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-        </div>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Борис</h4>
+            <time class="user-post__time" datetime="2016-05-30">(20 часов назад)</time>
+          </header>
 
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:215</span>
+          <div class="user-post__text">
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 215</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
 
-      <article class="user-photos__post user-post">
+      <article class="user-photos__post user-post user-post--regular">
 
-        <img class="user-post__photo" src="http://placehold.it/280x132" alt="Фотография пользователя">
+        <img class="user-post__photo" src="http://placehold.it/280x132" width="280" height="132" alt="Фотография пользователя">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Сергей</h4>
-          <time class="user-post__time" datetime="2016-05-30">(25 часов назад)</time>
-        </header>
+        <div class="user-post__info">
 
-        <div class="user-post__text">
-          <p>Самая кубанская в мире!</p>
-        </div>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Сергей</h4>
+            <time class="user-post__time" datetime="2016-05-30">(25 часов назад)</time>
+          </header>
 
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:4</span>
+          <div class="user-post__text">
+            <p>Самая кубанская в мире!</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 4</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
 
-      <article class="user-photos__post user-post">
+      <article class="user-photos__post user-post user-post--regular">
 
-        <img class="user-post__photo" src="http://placehold.it/280x132" alt="Фотография пользователя">
+        <img class="user-post__photo" src="http://placehold.it/280x132" width="280" height="132" alt="Фотография пользователя">
 
-        <header class="user-post__header">
-          <h4 class="user-post__author">Максим</h4>
-          <time class="user-post__time" datetime="2016-05-29">(40 часов назад)</time>
-        </header>
+        <div class="user-post__info">
 
-        <div class="user-post__text">
-          <p>Где снег-то?</p>
-        </div>
+          <header class="user-post__header">
+            <h4 class="user-post__author">Максим</h4>
+            <time class="user-post__time" datetime="2016-05-29">(40 часов назад)</time>
+          </header>
 
-        <footer class="user-post__footer">
-          <div class="user-post__vote">
-            <button class="user-post__btn-like btn-like">Нравится</button>
-            <span class="user-post__count-like">Нравится:150</span>
+          <div class="user-post__text">
+            <p>Где снег-то?</p>
           </div>
-        </footer>
+
+          <footer class="user-post__footer">
+            <div class="user-post__vote">
+              <button class="user-post__vote-btn">Нравится</button>
+              <span class="user-post__vote-count">Нравится: 150</span>
+            </div>
+          </footer>
+
+        </div>
 
       </article>
 
     </section>
 
 
-    <section class="new-photo">
+    <form class="new-photo">
 
-      <h3 class="new-photo__slogan page-slogan">
-    Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
-   </h3>
+      <h3 class="page__slogan new-photo__slogan">
+         Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+      </h3>
 
-      <img class="new-photo__img" src="http://placehold.it/280x374" alt="Фотография пользователя">
+      <div class="new-photo__img">
+        <img src="http://placehold.it/280x374" width="280" height="374" alt="Новая фотография">
+      </div>
 
-      <div class="new-photo__proc">
+      <div class="new-photo__proc proc-photo">
 
-        <button class="new-photo__btn-size"></button>
-        <button class="new-photo__btn-color"></button>
-        <button class="new-photo__btn-brt"></button>
+        <div class="proc-photo__opts">
+          <button class="proc-photo__opt proc-photo__opt--size"></button>
+          <button class="proc-photo__opt proc-photo__opt--color"></button>
+          <button class="proc-photo__opt proc-photo__opt--bright"></button>
+        </div>
 
-        <input class="new-photo__control" type="range">
+        <input class="proc-photo__range" type="range">
+
+        <div class="proc-photo__btns">
+          <button type="submit" class="proc-photo__btn proc-photo__btn--post">Запостить</button>
+          <button type="reset" class="proc-photo__btn proc-photo__btn--cancel">Отмена</button>
+        </div>
 
       </div>
 
-      <div class="new-photo__btns">
-        <button class="new-photo__btn-post">Запостить</button>
-        <button class="new-photo__btn-cancel">Отмена</button>
-      </div>
-
-    </section>
+    </form>
 
   </main>
 
 
   <footer class="page-footer">
 
-    <a class="logo-pict" href="index.html">PINK</a>
+    <a class="page-footer__logo logo-pict" href="index.html">PINK</a>
 
-    <ul class="socials">
+    <ul class="page-footer__socials socials">
       <li class="socials__item socials__item--twitter">
-        <a href=""></a>
+        <a href="https://twitter.com/"><span>Twitter</span></a>
       </li>
       <li class="socials__item socials__item--youtube">
-        <a href=""></a>
+        <a href="https://www.youtube.com"><span>Youtube</span></a>
       </li>
       <li class="socials__item socials__item--facebook">
-        <a href=""></a>
+        <a href="http://www.facebook.com/"><span>Facebook</span></a>
       </li>
     </ul>
 
-    <div class="credentials">
-      Разработано
-      <a class="credentials__logo" href=""><img src="http://placehold.it/27x34" alt="htmlacademy"> </a>
+    <div class="page-footer__credentials">
+      <span class="page-footer__credentials-text">Разработано</span>
+      <a class="page-footer__credentials-logo" href="https://htmlacademy.ru/">
+        <img src="http://placehold.it/27x34" width="27" height="34" alt="Htmlacademy">
+      </a>
     </div>
 
   </footer>
 
+  <script src="js/main-menu.js"></script>
 
 </body>
 

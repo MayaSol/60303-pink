@@ -1,0 +1,74 @@
+.logo-plain {
+  opacity: 0.5;
+  outline: 1px solid red;
+  background-color: antiquewhite;
+}
+
+.downloads__icon {
+  opacity: 0.3;
+  outline: 1px solid white;
+  background: orange;
+}
+
+.user-photos__post {
+  outline: 1px solid red;
+}
+
+.user-post__vote {
+  outline: 1px solid red;
+}
+
+.new-photo__proc-btns {
+  background-color: yellow;
+}
+
+.logo-pict {
+  outline: 1px solid red;
+  background-color: lemonchiffon;
+}
+
+.socials {
+  outline: 1px solid orange;
+}
+
+@mixin range-control {
+  width: 100%;
+
+  -webkit-appearance: none;
+
+  &::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+
+    cursor: pointer;
+
+    border: 2px solid $color-highlight;
+    border-radius: 50%;
+    background: #fff;
+
+    -webkit-appearance: none;
+  }
+  /* All the same stuff for Firefox */
+  &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    border: 2px solid $color-highlight;
+    border-radius: 50%;
+    background: #fff;
+  }
+  /* All the same stuff for IE */
+  &::-ms-thumb {
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    border: 2px solid $color-highlight;
+    border-radius: 50%;
+    background: #fff;
+  }
+}

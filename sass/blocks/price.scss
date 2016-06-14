@@ -1,0 +1,61 @@
+.price-table {
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 2px solid $color-grey;
+  }
+
+  th {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    color: #fff;
+    background-color: $color-main;
+  }
+
+  td {
+    font-size: 1.4rem;
+    line-height: 3.0rem;
+
+    width: 254px;
+    padding-left: 22px;
+
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: $color-main;
+  }
+}
+
+.price-table__tariff-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.0rem;
+
+  text-transform: uppercase;
+}
+
+.price-table__tariff-value {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3.0rem;
+
+  text-transform: uppercase;
+}
+
+.price-table__option {
+  font-size: 0;
+}
+
+.price-btn-1:checked ~ .slider__controls label[for='price-btn-1'] {
+  @include slider-label-checked;
+}
+
+.price-btn-2:checked ~ .slider__controls label[for='price-btn-2'] {
+  @include slider-label-checked;
+}
+
+.price-btn-3:checked ~ .slider__controls label[for='price-btn-3'] {
+  @include slider-label-checked;
+}
