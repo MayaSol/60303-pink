@@ -3,18 +3,23 @@ html {
 }
 
 .page {
-  min-width: $screen-sm;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
-  color:$color-main;
+
+  min-width: $screen-sm;
+
+  color: $color-main;
 }
 
-.page__slogan{
-  @include container;
-  text-align: center;
+.page__slogan {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 3.0rem;
+
+  text-align: center;
+
   color: $color-main;
+
+  @include container;
 }

@@ -1,36 +1,37 @@
 .socials {
-    font-size: 0;
-    line-height: 51px;
+  font-size: 0;
+  line-height: 51px;
 
-    width: 177px;
-    min-height: 51px;
-    padding: 0;
+  width: 177px;
+  min-height: 51px;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 
-    @include container;
-    text-align: center;
+  text-align: center;
+
+  @include container;
 }
 
 .socials__item {
-    display: inline-block;
+  display: inline-block;
 
-    margin-right: 12px;
+  margin-right: 12px;
 
-    vertical-align: middle;
+  vertical-align: middle;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    a {
-        display: block;
+  a {
+    display: block;
 
-        width: 45px;
-        height: 45px;
+    width: 45px;
+    height: 45px;
 
-        opacity: 0.1;
-        border: 3px solid $color-main;
-        border-radius: 50%;
-    }
+    opacity: 0.1;
+    border: 3px solid $color-main;
+    border-radius: 50%;
+  }
 }

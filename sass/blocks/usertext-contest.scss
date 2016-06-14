@@ -1,31 +1,31 @@
 .usertext-contest {
-    padding-top: 58px;
+  padding-top: 58px;
 
-    @include container;
+  @include container;
 }
 
 .usertext-contest__lbl {
-    font-size: 1.4rem;
-    line-height: 3.0rem;
+  font-size: 1.4rem;
+  line-height: 3.0rem;
 
-    display: block;
+  display: block;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: $color-highlight;
+  color: $color-highlight;
 }
 
 .usertext-contest__text {
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 47px;
-    padding-top: 20px;
-    padding-right: 18px;
-    padding-left: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 47px;
+  padding-top: 20px;
+  padding-right: 18px;
+  padding-left: 18px;
 
-    border: 2px solid $color-grey;
-    border-radius: 2px;
+  border: 2px solid $color-grey;
+  border-radius: 2px;
 }

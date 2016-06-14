@@ -1,22 +1,22 @@
 .contest__slogan {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .contest__btn {
-    display: block;
+  display: block;
 
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 
-    @include container;
-    @include btn-form;
+  @include container;
+  @include btn-form;
 }
 
 .contest__notes {
-    text-align: center;
+  text-align: center;
 
-    @include container;
+  @include container;
 
-    span {
-        color: $color-highlight;
-    }
+  span {
+    color: $color-highlight;
+  }
 }
