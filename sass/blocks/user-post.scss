@@ -5,7 +5,7 @@
   background-color: $color-grey-light;
 
   &--best {
-    width: $screen-sm;
+    width: $screen-mobile;
     margin-right: auto;
     margin-left: auto;
   }
@@ -95,7 +95,7 @@
   background-color: red;
 }
 
-.user-post__count-btn {
+.user-post__vote-count {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 2.4rem;
