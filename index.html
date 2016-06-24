@@ -7,27 +7,27 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page">
+<body class="page page--index">
 
   <header class="page-header">
 
     <nav class="main-menu">
 
-        <div class="main-menu__inner">
-          <div class="main-menu__top">
+      <div class="main-menu__inner">
+        <div class="main-menu__top">
 
-            <h1 class="main-menu__logo">
+          <h1 class="main-menu__logo">
             <a class="logo-plain"  href="#">
               PINK
             </a>
           </h1>
 
-            <div class="main-menu__btn-wrapper">
-              <button class="main-menu__btn">
-              </button>
-            </div>
-
+          <div class="main-menu__btn-wrapper">
+            <button class="main-menu__btn">
+            </button>
           </div>
+
+        </div>
 
         <ul class="main-menu__items">
           <li class="main-menu__item">
@@ -43,31 +43,38 @@
             <a href="https://htmlacademy.ru/">Htmlacademy</a>
           </li>
         </ul>
-        </div>
+      </div>
 
     </nav>
 
-    <div class="page-header__img"></div>
+    <div class="page-header__content">
 
-    <div class="downloads">
-      <div class="downloads__inner">
+      <div class="downloads">
+        <div class="downloads__inner">
 
-        <a class="downloads__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <h1 class="page-header__title-main">
+            Взгляните<br> на жизнь<br> иначе!
+          </h1>
 
-        <ul class="downloads__icons">
-          <li class="downloads__icon downloads__icon--apple">
-            <a href="http://www.apple.com/ru/itunes/">Apple</a>
-          </li>
-          <li class="downloads__icon downloads__icon--android">
-            <a href="https://play.google.com/store?hl=ru">Android</a>
-          </li>
-          <li class="downloads__icon downloads__icon--win">
-            <a href="https://www.microsoft.com/en-us/store/apps/windows-phone">Windows</a>
-          </li>
-        </ul>
+          <a class="downloads__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
 
-        <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <ul class="downloads__icons">
+            <li class="downloads__icon downloads__icon--apple">
+              <a href="http://www.apple.com/ru/itunes/">Apple</a>
+            </li>
+            <li class="downloads__icon downloads__icon--android">
+              <a href="https://play.google.com/store?hl=ru">Android</a>
+            </li>
+            <li class="downloads__icon downloads__icon--win">
+              <a href="https://www.microsoft.com/en-us/store/apps/windows-phone">Windows</a>
+            </li>
+          </ul>
 
+          <p class="downloads__info">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+
+        </div>
       </div>
     </div>
 
@@ -81,29 +88,61 @@
 
         <h2 class="features__title">
           <span>Устали от серости мегаполиса?</span>
-          <span>Нам есть, что вам предложить!</span>
+          <span>Нам есть, что вам<br> предложить!</span>
         </h2>
 
-        <ul class="features__items">
+        <div class="features__main">
 
-          <li class="features__item">
-            <h3 class="features__item-title">Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
+          <ul class="features__items">
 
-          <li class="features__item">
-            <h3 class="features__item-title">Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
+            <li class="features__item">
+              <div class="features__item-img"></div>
+              <h3 class="features__item-title">
+                Поднимает настроение
+              </h3>
+              <p>
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
 
-          <li class="features__item">
-            <h3 class="features__item-title">Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
+            <li class="features__item">
+              <div class="features__item-img"></div>
+              <h3 class="features__item-title">Меняет мир вокруг</h3>
+              <p>
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
 
-        </ul>
+            <li class="features__item">
+              <div class="features__item-img"></div>
+              <h3 class="features__item-title">
+                Заводит новых друзей
+              </h3>
+              <p>
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
 
-        <div class="features__img"></div>
+          </ul>
+
+          <div class="features__img"></div>
+
+        </div>
+
+        <div class="features__extra">
+          <div class="features__extra-img"></div>
+          <div class="features__extra-text">
+            <h2 class="features__extra-title">
+              Эффект на 24 часа!
+            </h2>
+            <p>
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="features__extra-link" href="#">
+              Узнать больше об исследовании
+            </a>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -128,7 +167,10 @@
           <ul class="reviews__items">
 
             <li class="reviews__item slider__item">
-              <h3 class="reviews__item-author">Николай Петров</h3>
+              <h3 class="reviews__item-author author-reviews">
+                <span class="author-reviews__name">Николай Петров</span>
+                <span class="author-reviews__info">25лет, водитель трамвая</span>
+              </h3>
               <div class="reviews__item-content">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </div>
@@ -173,21 +215,64 @@
 
             <tr>
               <th>
+              </th>
+              <th class="price-table__base">
+                <div class="price-table__tariff-name">База</div>
+                <div class="price-table__tariff-value">1,99 USD</div>
+              </th>
+              <th class="price-table__standart">
                 <div class="price-table__tariff-name">Стандарт</div>
                 <div class="price-table__tariff-value">3,99 USD</div>
+              </th>
+              <th class="price-table__unlim">
+                <div class="price-table__tariff-name">Анлим</div>
+                <div class="price-table__tariff-value">9,99 USD</div>
               </th>
             </tr>
 
             <tr>
-              <td>Розовый фильтр<span class="price-table__option price-table__option--yes"> - есть</span></td>
+              <td class="price-table__names">
+                Розовый фильтр
+              </td>
+              <td class="price-table__base">
+                Розовый фильтр<span class="price-table__option price-table__option--yes"> - есть</span>
+              </td>
+              <td class="price-table__standart">
+                Розовый фильтр<span class="price-table__option price-table__option--yes"> - есть</span>
+              </td>
+              <td class="price-table__unlim">
+                Розовый фильтр<span class="price-table__option price-table__option--yes"> - есть</span>
+              </td>
             </tr>
 
             <tr>
-              <td>Смайлики<span class="price-table__option price-table__option--yes"> - есть</span></td>
+              <td class="price-table__names">
+                Смайлики
+              </td>
+              <td class="price-table__base">
+                Смайлики<span class="price-table__option price-table__option--no"> - есть</span>
+              </td>
+              <td class="price-table__standart">
+                Смайлики<span class="price-table__option price-table__option--yes"> - есть</span>
+              </td>
+              <td class="price-table__unlim">
+                Смайлики<span class="price-table__option price-table__option--yes"> - есть</span>
+              </td>
             </tr>
 
             <tr>
-              <td>Комментарии<span class="price-table__option price-table__option--no"> - нет</span></td>
+              <td class="price-table__names">
+                Комментарии
+              </td>
+              <td class="price-table__base">
+                Комментарии<span class="price-table__option price-table__option--no"> - нет</span>
+              </td>
+              <td class="price-table__standart">
+                Комментарии<span class="price-table__option price-table__option--no"> - нет</span>
+              </td>
+              <td class="price-table__unlim">
+                Комментарии<span class="price-table__option price-table__option--yes"> - нет</span>
+              </td>
             </tr>
 
           </table>
@@ -226,10 +311,35 @@
 
       </ul>
 
-      <div class="map" id="yandex-map">
+      <div class="contacts__map" id="yandex-map">
       </div>
 
     </section>
+
+    <div class="page-footer__bottom">
+
+      <a class="page-footer__logo logo-pict" href="index.html">PINK</a>
+
+      <ul class="page-footer__socials socials">
+        <li class="socials__item socials__item--twitter">
+          <a href="https://twitter.com/"><span>Twitter</span></a>
+        </li>
+        <li class="socials__item socials__item--youtube">
+          <a href="https://www.youtube.com"><span>Youtube</span></a>
+        </li>
+        <li class="socials__item socials__item--facebook">
+          <a href="http://www.facebook.com/"><span>Facebook</span></a>
+        </li>
+      </ul>
+
+      <div class="page-footer__credentials">
+        <span class="page-footer__credentials-text">Разработано</span>
+        <a class="page-footer__credentials-logo" href="https://htmlacademy.ru/">
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="Htmlacademy">
+        </a>
+      </div>
+
+    </div>
 
   </footer>
 

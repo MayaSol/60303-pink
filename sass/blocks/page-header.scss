@@ -1,31 +1,24 @@
 .page-header {
   min-width: $screen-mobile;
   margin: 0 auto;
-  /**/
-
-  outline: 2px dotted yellow;
-  background-color: #2c394a;
 }
 
-.page-header__img {
+.page-header__content {
   width: $screen-mobile;
-  height: 392px;
   margin: 0 auto;
+  padding-top: 392px;
 
-  opacity: 0.5;
-  /**/
-  outline: 1px solid red;
-  background: yellow;
+  @include clearfix;
 }
 
 .page-header__title-wrapper {
-  height: 171px;
+  min-height: 171px;
 
   @include container;
 }
 
 .page-header__title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 300;
 
   display: inline-block;
@@ -34,4 +27,42 @@
   vertical-align: middle;
 
   color: #fff;
+}
+
+.page-header__title-main {
+  font-size: 4.0rem;
+  font-weight: 300;
+  line-height: 60px;
+
+  display: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .page-header__content {
+    width: $screen-tablet;
+    padding-top: 100px;
+    padding-bottom: 110px;
+
+    @include container;
+  }
+
+  .page-header__title-main {
+    display: block;
+  }
+}
+
+@media (min-width: $screen-large) {
+
+  .page-header__content {
+    width: $screen-large;
+    padding-top: 115px;
+  }
 }

@@ -4,10 +4,6 @@
 
 .features__inner {
   padding-top: 40px;
-
-  outline: 1px solid green;
-  /**/
-  background-color: bisque;
 }
 
 .features__header {
@@ -107,16 +103,21 @@
   margin-bottom: 18px;
 }
 
-.features__img {
-  height: 277px;
-  /**/
+.features__item-img {
+  display: none;
+}
 
-  background-color: #c11350;
-
+.features__main {
+  @include clearfix;
   @include container;
 }
 
+.features__img {
+  height: 277px;
+}
+
 .features__items {
+  margin-bottom: 45px;
   padding: 0;
 
   list-style: none;
@@ -130,7 +131,7 @@
   margin-bottom: 35px;
 
   &:last-child {
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 }
 
@@ -150,4 +151,113 @@
   background-color: #c11350;
 
   @include container;
+}
+
+.features__extra {
+  display: none;
+}
+
+
+@media (min-width: $screen-tablet) {
+
+  .features__title {
+    font-size: 4.0rem;
+    line-height: 5.0rem;
+
+    span {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__items {
+    float: right;
+
+    width: 310px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
+  .features__img {
+    float: left;
+
+    width: 263px;
+    height: 482px;
+  }
+
+  .features__main {
+    margin-bottom: 59px;
+  }
+
+  .features__extra {
+    display: block;
+
+    @include clearfix;
+    @include container;
+  }
+
+  .features__extra-title {
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+
+    color: #000;
+  }
+
+  .features__extra-text {
+    float: right;
+
+    width: 310px;
+    padding-top: 40px;
+
+    text-align: left;
+  }
+
+  .features__extra-img {
+    float: left;
+
+    width: 239px;
+    height: 277px;
+  }
+
+  .features__extra-link {
+    color: $color-highlight;
+  }
+}
+
+@media (min-width: $screen-large) {
+
+  .features__img {
+    display: none;
+  }
+
+  .features__items {
+    width: $container-large - 2*16;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .features__item {
+    float: left;
+
+    width: 264px;
+    margin-right: 58px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .features__item-img {
+    display: block;
+
+    width: 264px;
+    height: 300px;
+    margin-bottom: 60px;
+  }
+
+  .features__extra-text {
+    width: 570px;
+
+    text-align: left;
+  }
 }

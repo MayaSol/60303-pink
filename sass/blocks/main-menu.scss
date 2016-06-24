@@ -17,7 +17,7 @@ $bg-main-menu-top: rgba(0, 0, 0, 0.3);
     }
 
     .main-menu__top {
-      height: 66px;
+      min-height: 66px;
     }
 
     .main-menu__item:first-child {
@@ -31,12 +31,12 @@ $bg-main-menu-top: rgba(0, 0, 0, 0.3);
 .main-menu__inner {
   position: relative;
 
-  height: 69px;
+  min-height: 69px;
   padding-bottom: 257px;
 }
 
 .main-menu__top {
-  height: 69px;
+  min-height: 69px;
 
   @include container;
   @include clearfix;
@@ -144,62 +144,61 @@ $bg-main-menu-top: rgba(0, 0, 0, 0.3);
   .main-menu {
     background-color: $bg-main-menu-top;
 
+    .main-menu__inner {
+      height: auto;
+      padding-bottom: 0;
 
-      .main-menu__inner {
-        height: auto;
-        padding-bottom:0;
+      background-color: transparent;
 
-        background-color: transparent;
+      @include container;
+      @include clearfix;
+    }
 
-        @include container;
-        @include clearfix;
+    .main-menu__top {
+      float: left;
+
+      width: 150px;
+    }
+
+    .main-menu__btn-wrapper {
+      display: none;
+    }
+
+    .main-menu__items {
+      position: static;
+
+      display: block;
+      float: right;
+
+      width: 700px;
+
+      text-align: right;
+
+      background-color: transparent;
+    }
+
+    .main-menu__item {
+      font-size: 1.8rem;
+      font-weight: 400;
+
+      display: inline-block;
+
+      margin-right: 80px;
+
+      vertical-align: middle;
+      text-transform: capitalize;
+
+      box-shadow: none;
+
+      &:last-child {
+        margin-right: 0;
       }
 
-      .main-menu__top {
-        float: left;
-
-        width: 150px;
-      }
-
-      .main-menu__btn-wrapper {
-        display: none;
-      }
-
-      .main-menu__items {
-        position: static;
-
+      a {
         display: block;
-        float: right;
 
-        width: 700px;
-
-        text-align: right;
-
-        background-color: transparent;
+        width: auto;
       }
-
-      .main-menu__item {
-        font-size: 1.8rem;
-        font-weight: 400;
-
-        display: inline-block;
-
-        margin-right: 80px;
-
-        vertical-align: middle;
-        text-transform: capitalize;
-
-        box-shadow: none;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        a {
-          display: block;
-
-          width: auto;
-        }
     }
   }
 }
